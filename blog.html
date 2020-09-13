@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appication form</title>
+	<style type="text/css">
+		h1{
+			background-color: rgb(161, 149, 149);
+			text-align: center;
+			width: 100%;
+			
+		}
+		body{
+			
+			background-color: rgb(236, 154, 154);
+		}
+		h2{
+			background-color: rgb(204, 89, 89);
+			text-align: center;
+		}
+		
+		table{
+			width: 600px;
+			margin: auto;;
+			text-align: center;
+			color: black;
+		}
+		table,th,td{
+			border: 3px solid black;
+			border-collapse: collapse;
+			padding: 20px;
+			font-size: 17px
+
+		}
+		ul{
+			text-align: center;
+			
+			font-style: italic;
+			font-size: 20px;
+		}
+		form{
+			text-align: center;
+			
+			font-style: italic;
+			font-size: 20px;
+		}
+		h4{
+			background-color: brown;
+			text-align: center;
+		}
+		button{
+			background-color: yellow;
+			border-radius: 3em;
+			
+			width: 12em;
+			height: 3em;
+		}
+		button:hover{
+			background-color: rgb(211, 174, 238);
+		}
+
+		
+		footer{
+			text-align: center;
+			color: rgb(245, 248, 242);
+			font-style: italic;
+			background-color: black;
+		}
+		#im1{
+			width: 100%;
+			max-height: 40em;
+		}
+		.help{
+			margin-top: 3em;
+			background-color: rgb(170, 235, 170);
+		}
+		.inp{
+			background-color: rgb(234, 245, 76);
+			width: 10em;
+			height: 3em;
+			border-radius: 3em;
+
+
+		}
+		.inp:hover{
+			background-color: rgb(150, 182, 241);
+		}
+		.myimg{
+			border-radius: 10em;
+		}
+		#med{
+			border-radius: 5em;
+		}
+
+	</style>
+
+</head>
+<body >
+	
+	
+	<h1>Application form For the Post of Executives in Northern Railway</h1>
+	
+	<a href="rail.jpg" target="rail.jpg">
+		<img id="im1" src="rail.jpg">
+	</a>
+	
+	
+	<h2>Executive Post Details with Vacancies</h2>
+	
+	<ul>
+		<li>Junior Executive Grade-I</li>
+		<ol>
+			
+			<li>Marketing Executive(03)</li>
+			<li>Financing Executive(01)</li>
+			<li>Managing Executive(05)</li>
+		</ol>
+	</ul>
+	<ul>
+		<li>Senior Executive Grade-I</li>
+		<ol>
+			
+			<li>Marketing Executive(01)</li>
+			<li>Financing Executive(01)</li>
+			<li>Managing Executive(01)</li>
+		</ol>
+	</ul>
+	<h2>Details of Qualification and Total vacancy</h2>
+	<table >
+		<thead>
+			<tr>
+				<th>Name of Post</th>
+				<th>Qualification</th>
+				<th>Post Vacancies</th>
+			</tr>
+		</thead>
+		<br>
+		<tbody>
+			<tr>
+				<td>Junior Executive Grade-I</td>
+				<td> P.G. with 60% Marks  </td>
+				<td>  09</td>
+			</tr>
+			<tr>
+				<td>Senior Executive Grade-I</td>
+				<td>   P.H.D. with 50% Marks</td>
+				<td>  03</td>
+			</tr>
+
+		</tbody>
+	</table>
+	<h2> Online Application Form</h2>
+	<br>
+	<form action="process.php"method="POST">
+		<div>
+			<label>Select the Post Applying For</label>
+			<select>
+				<option>Select</option>
+				<option>Junior Marketing Executive</option>
+				<option>Junior Financing Executive</option>
+				<option>Junior Managing Executive</option>
+				<option>Senior Marketing Executive</option>
+				<option>Senior Financing Executive</option>
+				<option>Senior Managing Executive</option>
+				
+			</select>
+
+		</div>
+		<br>
+		<div>
+			<label>First Name</label>
+			<input type id="text" name="firstName">
+		</div>
+		<br>
+		<div>
+			<label>Middle Name</label>
+			<input type="text" name="middleName">
+		</div>
+		<br>
+		<div>
+			<label>Last Name</label>
+			<input type="text" name="LastName">
+		</div>
+		<br>
+		<div>
+			<label>Mother's Name</label>
+			<input type="text" name="Mother's Name">
+		</div>
+		<br>
+		<div>
+			<label>Father's Name</label>
+			<input type="text" name="Father's Name">
+		</div>
+		<br>
+		<div>
+			<label>Gender</label>
+			<select name="Gender">
+				<option>Select</option>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Others">Others</option>
+			</select> 
+		</div>
+		<br>
+		<label>Date of Birth:</label>
+		<input type="date" name="Birthday">
+		<br>
+		<br>
+		<div>
+			<label>Nationality</label>
+			<select name="Country">
+				<option>Select</option>
+				<option value="India">India</option>
+				<option value="Bangladesh">Bangladesh</option>
+				<option value="Nepal">Nepal</option>
+				<option value="Sri Lanka">Sri Lanka</option>
+				<option value="Others">Others</option>
+
+			</select> 
+		</div>
+		<br>
+		<div>
+			<label>If Others, Specify</label>
+			<input type="text" name="Country">
+		</div>
+		<br>
+
+		<label>Address</label>
+		<textarea name="Address"></textarea>
+		<br>
+		<br>
+		<div>
+			<label>Email</label>
+			<input type="text" name="Email">
+		</div>
+		<br>
+		<div>
+			<label>Contact No.</label>
+			<input type="text" name="Contact No.">
+		</div>
+		<br>
+		
+		<h3>Qualifications:</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>S.No.</th>
+					<th>Education</th>
+					<th>Board</th>
+					<th>School/University</th>
+					<th>Passing Date</th>
+					<th>Total marks</th>
+					<th>Obtained marks</th>
+					<th>% marks/C.G.P.A.</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1.</td>
+					
+					<td>
+						<select name="Education">
+							<option value="Select">Select</option>
+							<option value="High School">High School</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Graduation">Graduation</option>
+							<option value="Post Graduation">Post Graduation</option>
+							<option value="P.H.D.">P.H.D.</option>
+							<option value="Others">Computer Proficiency</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="text" name="School"></td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					
+					<td>
+						<select name="Education">
+							<option value="Select">Select</option>
+							<option value="High School">High School</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Graduation">Graduation</option>
+							<option value="Post Graduation">Post Graduation</option>
+							<option value="P.H.D.">P.H.D.</option>
+							<option value="Others">Computer Proficiency</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="text" name="School"></td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					
+					<td>
+						<select name="Education">
+							<option value="Select">Select</option>
+							<option value="High School">High School</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Graduation">Graduation</option>
+							<option value="Post Graduation">Post Graduation</option>
+							<option value="P.H.D.">P.H.D.</option>
+							<option value="Others">Computer Proficiency</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="text" name="School"></td>
+				</tr>
+				<tr>
+					<td>4.</td>
+					
+					<td>
+						<select name="Education">
+							<option value="Select">Select</option>
+							<option value="High School">High School</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Graduation">Graduation</option>
+							<option value="Post Graduation">Post Graduation</option>
+							<option value="P.H.D.">P.H.D.</option>
+							<option value="Others">Computer Proficiency</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="text" name="School"></td>
+				</tr>
+				<tr>
+					<td>5.</td>
+					
+					<td>
+						<select name="Education">
+							<option value="Select">Select</option>
+							<option value="High School">High School</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Graduation">Graduation</option>
+							<option value="Post Graduation">Post Graduation</option>
+							<option value="P.H.D.">P.H.D.</option>
+							<option value="Others">Computer Proficiency</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="text" name="School"></td>
+				</tr>
+				<tr>
+					<td>6.</td>
+					
+					<td>
+						<select name="Education">
+							<option value="Select">Select</option>
+							<option value="High School">High School</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Graduation">Graduation</option>
+							<option value="Post Graduation">Post Graduation</option>
+							<option value="P.H.D.">P.H.D.</option>
+							<option value="Others">Computer Proficiency</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="text" name="School"></td>
+				</tr>
+				<tr>
+					<td>7.</td>
+					
+					<td>
+						<select name="Education">
+							<option value="Select">Select</option>
+							<option value="High School">High School</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Graduation">Graduation</option>
+							<option value="Post Graduation">Post Graduation</option>
+							<option value="P.H.D.">P.H.D.</option>
+							<option value="Others">Computer Proficiency</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="number" name="School"></td>
+					<td><input type="text" name="School"></td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<h3>Experience:</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>S.No.</th>
+					<th>Post</th>
+					<th>Details of Organisation</th>
+					<th>Date of Joining</th>
+					<th>Date of Leaving</th>
+					<th>Experience(Years/Months/Days)</th>
+					
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1.</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="text" name="School"></td>
+					
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="text" name="School"></td>
+					
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="text" name="School"></td>
+					
+				</tr>
+				<tr>
+					<td>4.</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="text" name="School"></td>
+					
+				</tr>
+				<tr>
+					<td>5.</td>
+					<td><input type="text" name="School"></td>
+					<td><input type="text" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="date" name="School"></td>
+					<td><input type="text" name="School"></td>
+					
+				</tr>
+				
+				
+			</tbody>
+		</table>
+		<h3>Uploads:</h3>
+		<div class="custom-file">
+			<label>Photo(max. size 100 kb)</label>
+			<input type="file" class="custom-file-input" id="inputfile">
+			
+		</div>
+		<div class="custom-file">
+			<label>Signature(max. size 100 kb)</label>
+			<input type="file" class="custom-file-input" id="inputfile">
+			
+		</div>
+		<div class="custom-file">
+			<label>Left Hand Thumb Impression(up to 100 kb)</label>
+			<input type="file" class="custom-file-input" id="inputfile">
+			
+		</div>
+
+		<h3>Declaration:</h3>
+		<ul>
+			<li>All informations are correct up to my knowledege.</li>
+			<li>I am solely responsible for the details I have provided.</li>
+			<li>If I will be found guilty I will be ready to face concequences.</li>
+		</ul>
+		<br>
+		<input class="inp" type="submit" name="Submit" value="Submit">
+		
+		<div class="help">
+		<h4>
+			
+				Contacts for Help
+		</h4>
+		<button ><a href="https://nr.indianrailways.gov.in/view_section.jsp?lang=0&id=0,7" target="https://nr.indianrailways.gov.in/view_section.jsp?lang=0&id=0,7">Contact Us</a></button>
+		<br>
+		</form>
+		
+		<p>CopyRight &copy;2015, Indian Railways. All rights Reserved.</p>
+	
+			
+		
+
+	<!.......Outside Form......>
+	
+	<br>
+	<br>
+	<h4>
+		Owner of this Page
+	</h4>
+	<a  href="images\my.jpg"target="images\my.jpg">
+		<img class="myimg" src="images\my.jpg"alt="my samples" width="200 height="200">
+	</a>
+	<h5>Ransher Raj | B.Tech |
+	2nd Year(Electronics & Comm. Engg.)</h5>
+	
+	<blockquote cite="https://www.google.com">
+
+		Hi Friend(s)!,
+		I am very happy that you're  vewing this page.I am just a beginner and I am trying to learn. If somewhere I have done mistakes or if it can be done in other better way then please comment.. Do like this as well. <a href="https://www.youtube.com/" target="https://www.youtube.com/">Read More..</a>
+				<p><abbr title="Ransher Raj">RR</abbr> is Awsome</p>
+		<br>
+		<p>
+			</blockquote>
+			<cite>HTML is Future</cite>.   By RR
+			</p>
+		<br><br>
+		</div>
+
+		<div class="footer">
+			<footer id="main-footer">
+				<h5>Contact Me</h3>
+
+				<nav>
+					<ul >
+						<li><a href="#">Home</a></li>
+		  				<li><a href="#">Services</a></li>
+		  				<li><a href="#">About</a></li>
+		  				<li><a href="#">Contacts</a></li>
+		  				<li><a href="#">Links</a></li>
+		  			</ul>
+				</nav>
+				<div>
+				<a href="#" >
+					<img id="med" src="im1.png">
+				</a>
+				<a href="#" >
+					<img id="med" src="im2.png">
+				</a>
+				<a href="#" >
+					<img id="med" src="im3.png">
+				</a>
+			</div>
+			</footer>
+			
+		</div>
+		
+</body>
+</html>
